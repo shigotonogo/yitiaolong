@@ -1,0 +1,24 @@
+{{#contentFor "body"}}
+    <h1>Restricted page!</h1>
+    <p>
+        User: 
+        {{#if user}}
+            {{user}} (<a href='/auth/logout'>logout</a>)
+        {{else}}
+            Not logged in
+        {{/if}}
+    </p>
+    <p>
+    This page is only accessible for authenticated users! Psssss... This is a secret!
+    </p>
+    <ul>
+      <li>
+        <a href='/'>Back to homepage</a>
+      </li>
+      <li>
+        <a href='/auth/login'>Login / Register</a>
+      </li>
+    </ul>
+{{/contentFor}}
+
+{{!< base}}

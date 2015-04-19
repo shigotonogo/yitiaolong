@@ -1,0 +1,85 @@
+.profile {
+    margin-top: 50px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.profile .portrait {
+    display: inline-block;
+    height: 100%;
+    margin: 0 auto;
+}
+.portrait .photo {
+    width: 280px;
+    height: 264px;
+    background: url("/assets/images/default-photo.png") no-repeat center;
+    position: relative;
+    top: 20px;
+}
+.portrait .tips {
+    font-size: 14px;
+    text-decoration: none;
+    color: #09F;
+    font-family: "Arial Regular","Arial";
+}
+.profile .description {
+    font-size: 12px;
+    text-align: center;
+    margin: 10px auto;
+    color: #999999;
+    font-family: "Heiti SC Light","Heiti SC";
+    width: 358px;
+    line-height: 18px;
+}
+
+.submit {
+    padding-left: 107px;
+}
+
+.btn {
+    position: absolute;
+    color: red;
+    border: none;
+    padding: 12px 6px;
+    width: 100px;
+    border-radius: 6px;
+    margin-top: 20px;
+    color: white;
+    background-color: #666666;
+    font-size: 13px;
+}
+
+.hide{
+    display: none;
+}
+
+.dropzone {
+    background-color: #FFFFFF;
+    border: 1px solid #D5D5D5;
+    padding: 0;
+    min-height: 0;
+}
+
+.dropzone .dz-default.dz-message {
+    background: none;
+    position: relative;
+    top: 80px;
+    height: 50px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.profile input{
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #D5D5D5;
+    border-radius: 10px;
+    background-color: #F50057;
+    padding: 20px 90px;
+    color: #FFFFFF;
+    text-align: center;
+}

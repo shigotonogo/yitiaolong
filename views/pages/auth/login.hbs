@@ -1,0 +1,57 @@
+{{#contentFor "head"}}
+    <link rel="stylesheet" href="/assets/css/page/login.css">
+    <link rel="stylesheet" href="/assets/css/lib/base.css">
+{{/contentFor}}
+
+{{#contentFor "body"}}
+    <div class='content'>
+            <div class="logo">
+                <img src="/assets/images/facehub_logo_landing.png" />
+                <span class="version">beta</span>
+            </div>   
+            <div class="title">认识新同事，熟悉老同事</div>
+            <div class="login-box">
+                <form action="http://localhost:3000/auth/sendtoken" method="post" id='loginForm'>
+                    <div class="email">请输入你的工作邮箱地址</div>
+                    <div class="empty-email">邮箱地址不能为空哦</div>
+                    <div class="email-address">
+                        <input type='text' placeholder='邮箱地址' name='user' id='user' autocomplete='off'/>
+                        <div class="email-suffix">@thoughtworks.com</div>
+                    </div>
+                    <input type="submit" value='立即加入' class='submit big-button'>
+                </form>
+
+                <div class="after-register">
+                    <h3>加入成功！</h3>
+                    <h3>请查看你的收件箱 ：）</h3>
+                    <div class='re-register'>重新填写邮箱  》</div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="footer">
+            <div class="feature">
+                <div class="title">脸熟？认识一下</div>
+                <div class="description">记住一个人的脸总是比记住名字简单。通过Facehub的照片墙，可以浏览公司内各位成员的头像和相关资料，帮你认识更多人。</div>
+            </div>
+            <div class="feature center">
+                <div class="title">查看ta的工作联系方式</div>
+                <div class="description">需要跟其它Office的同事取得联系吗？点击一个人的头像，不仅了解ta的职位和所在的项目，更能查看工作邮箱、电话、聊天账号等。</div>
+            </div>
+            <div class="feature future">
+                <span class="future-tip">即将发布</span>
+                <div class="title">更灵活地查看</div>
+                <div class="description">闻名已久却未曾谋面？照片墙之外，我们将支持按姓名排序的列表视图，让你更精确地找人。另外，我们会优化手机上浏览体验。</div>
+            </div>
+            <div class="copyright">© Shigotonogo. 2014</div>
+        </div>
+        <a href="https://jinshuju.net/f/AeKIfA" target="_blank" class="feedback">点我反馈</a>
+{{/contentFor}}
+
+{{#contentFor "scripts"}}
+    <script src='/assets/js/lib/jquery.min.1.9.1.js'></script>
+    <script src='/assets/js/page/login.js'></script>
+{{/contentFor}}
+
+{{!< base}}

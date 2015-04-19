@@ -1,0 +1,35 @@
+.container .tips{
+    display: block;
+}
+.container .operations{
+    overflow: hidden;
+}
+.raw-photo{
+    float: left;
+}
+.raw-photo img{
+    width: 680px;
+}
+
+.preview{
+    display: none;
+}
+
+.sample img{
+    display: block;
+}
+.sample .name{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    background-color: #FFFFFF;
+}
+.sample .tips{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#submit{
+    margin-right: 15px;
+}

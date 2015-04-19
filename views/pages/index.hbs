@@ -1,0 +1,83 @@
+{{#contentFor "head"}}
+    <title>facehub成员列表</title>
+    <link rel="stylesheet" href="/assets/css/lib/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/css/lib/base.css">
+    <link rel="stylesheet" href="/assets/css/page/index.css">
+    <link rel="stylesheet" href="/assets/css/page/profile-detail.css">
+{{/contentFor}}
+
+{{#contentFor "body"}}
+        <nav>
+          <div class='top'>
+              <div class='title pull-left'>
+                ThoughtWorkers in Xi'an
+              </div>
+              <div class='home pull-right'>
+                <a class='top-button new-profile hidden' href="/upload">+ 我要上墙</a>
+                <a class='top-button edit-profile hidden' href="/profile">编辑我的卡片</a>
+              </div>
+          </div> 
+        </nav>
+      
+      <div id='current-profile'></div>
+      <div id='members' data-exist='{{currentEmailExist}}'>
+        {{#users}}
+          <div class='profile' data-user-id="{{id}}" data-email='{{email}}'>
+            <img class="photo" src="{{avatar}}" alt="{{name}}" width='160' height='160'>
+            <div class="name">
+              {{name}}
+            </div>
+          </div>
+        {{/users}}
+    </div>
+    <script id="current-template" type='text/reactive'>
+      <div class='profile-detail'>
+        <div class='pull-left detail-img'>
+          <img class="photo" src="{photo}" alt="{name}">
+        </div>
+        <div class='pull-right detail-info'>
+          <div class="name section">
+            {name}
+          </div>
+          <a class='edit-entry'>
+            <span class='edit-image'></span>
+            <span>编辑</span>
+          </a>
+          <hr class='gap'>
+          <div class='position section'>
+              <div class="head"> Title </div>
+              {title}
+           </div>
+           <div class='project section'>
+              <div class="head"> Team </div>
+             {project}
+           </div>
+           <div class='email section'>
+              <div class="head"> Email </div>
+             {email}
+           </div>
+           <div class='phone-number section'>
+              <div class="head"> Mobile </div>
+             {phone}
+           </div>
+           <div class='skype section'>
+              <div class="head"> Skype </div>
+             {skype}
+           </div>
+        </div>
+      </div>
+    </script>
+    <footer class="copyright">© Shigotongo.2014</footer>
+    <a href="https://jinshuju.net/f/AeKIfA" target="_blank" class="feedback">点我反馈</a>
+{{/contentFor}}
+
+{{#contentFor "scripts"}}
+    <script src='/assets/js/lib/jquery.min.1.9.1.js'></script>
+    <script src='/assets/js/lib/jquery.cookie.js'></script>
+    <script src='/assets/js/lib/underscore-min.js'></script>
+    <script src='/assets/js/lib/ractive.js'></script>
+    <script src='/assets/js/lib/jquery.magnific-popup.js'></script>
+    <script type="text/javascript" src="/assets/js/page/index.js"></script>
+{{/contentFor}}
+
+{{!< base}}

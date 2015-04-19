@@ -1,0 +1,70 @@
+.profile {
+	max-width: 960px;
+	margin: 50px auto;
+	position: relative;
+}
+.profile .portrait {
+	display: inline-block;
+	width: 35%;
+}
+.portrait .photo {
+	width: 350px;
+	margin-bottom: 20px;
+}
+.portrait .avatar {
+	width: 160px;
+	margin-bottom: 20px;
+}
+.portrait .tips {
+	font-size: 14px;
+	margin-left: 60px;
+	text-decoration: none;
+	color: #09F;
+	font-family: "Arial Regular","Arial";
+}
+.portrait .description {
+	font-size: 12px;
+	text-align: left;
+	margin-top:10px;
+	color: #999999;
+	font-family: "Heiti SC Light","Heiti SC";
+	width: 210px;
+}
+.profile .info {
+	display: inline-block;
+	width: 45%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.info .line {
+		height: 40px;
+		margin: 10px 5px;
+}
+.info .line label {
+	float: left;
+	width: 100px;
+	font-size: 18px;
+	line-height: 40px;
+}
+.info .line input {
+	height: 25px;
+	width: 200px;
+}
+
+.info .separator {
+	border-top: 1px solid #C9C9C9;
+}
+
+.hide{
+    display: none;
+}
+
+select{
+	line-height: 35px;
+	height: 35px;
+	width: 207px;
+	font-size: 14px;
+	padding: 3px 2px;
+	border-radius: 1px;
+}

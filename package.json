@@ -1,0 +1,30 @@
+{
+  "name": "yitiaolong",
+  "version": "0.0.1",
+  "description": "all in one facehub application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sh bin/start-production.sh"
+  },
+  "author": "newdongyuwei@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "~1.0.0",
+    "connect-redis": "^2.2.0",
+    "cookie-parser": "~1.0.1",
+    "emailjs": "0.3.13",
+    "express": "~4.2.0",
+    "express-hbs": "^0.8.4",
+    "express-session": "^1.2.1",
+    "formidable": "^1.0.17",
+    "leveldown": "^0.10.4",
+    "levelup": "^0.19.0",
+    "maildev": "^0.9.1",
+    "morgan": "~1.0.0",
+    "mustache": "^1.0.0",
+    "passwordless": "*",
+    "passwordless-redisstore-bcryptjs": "0.0.2",
+    "static-favicon": "~1.0.0"
+  }
+}

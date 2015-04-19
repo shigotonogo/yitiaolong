@@ -1,0 +1,86 @@
+.mfp-content {
+    text-align: center;
+}
+.mfp-content .mfp-close {
+    width: 40px;
+    height: 40px;
+    color: white;
+    top: -1px;
+    opacity: 1;
+}
+.profile-detail {
+    width: 600px;
+    height: 400px;
+    margin: 100px auto;
+    position: relative;
+    background-color: white;
+}
+.profile-detail .detail-img {
+    width: 300px;
+}
+.detail-img .photo {
+    display: block;
+    height: 400px;
+    width: 300px;
+}
+
+.edit-entry {
+    float: right;
+    position: relative;
+    right: 55px;
+    top: -43px;
+    font-size: 13px;
+    display: none;
+}
+
+.edit-image {
+    background: url("/assets/images/edit_16.png") no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.profile-detail .detail-info {
+    width: 270px;
+    height: 340px;
+    padding: 30px 0px 30px 30px;
+}
+.profile-detail .close-bg{
+    position: absolute;
+    top: -19px;
+    right: -19px;
+    width: 40px;
+    height:40px;
+    background-color: rgb(255,0,102);
+    border-radius: 20px;
+}
+
+.profile-detail .close-bg:hover{
+    background-color: #d80056;
+}
+
+.detail-info .section {
+    margin: 8px 0px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+.detail-info .position {
+    margin-top: 15px;
+}
+
+.detail-info .section .head {
+    font-size: 13px;
+    color: #999;   
+}
+.detail-info .name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-bottom: 10px
+}
+.detail-info .gap {
+    color: rgb(153, 153, 153);
+}
+

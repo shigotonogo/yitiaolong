@@ -1,0 +1,18 @@
+{{#contentFor "body"}}
+    <h1>authentication</h1>
+    <p>
+        User: 
+        {{#if user}}
+            {{user}} (<a href='/auth/logout'>logout</a>)
+        {{else}}
+            Not logged in
+        {{/if}}
+    </p>
+    
+    <ul>
+      <li>
+        <a href='/auth/login'>Login / Register</a>
+      </li>
+    </ul>
+{{/contentFor}}
+{{!< base}}
